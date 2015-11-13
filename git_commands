@@ -1,0 +1,69 @@
+Last login: Sat Nov  7 16:34:57 on console
+Simons-Air:~ simonjanashia$ git
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Simons-Air:~ simonjanashia$ git
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Simons-Air:~ simonjanashia$ $ git config --global user,name "sjanashia"
+-bash: $: command not found
+Simons-Air:~ simonjanashia$ $ git config --global user,name "sjanashia"
+-bash: $: command not found
+Simons-Air:~ simonjanashia$ git
+
+
+Simons-Air:~ simonjanashia$ git config --global user.name "sjanashia"
+Simons-Air:~ simonjanashia$ git config --global user.email "sj2555@tc.columbia.edu"
+Simons-Air:~ simonjanashia$ cd ~/Desktop
+Simons-Air:Desktop simonjanashia$ mkdir newschool
+Simons-Air:Desktop simonjanashia$ cd newschool
+Simons-Air:newschool simonjanashia$ git clone <!DOCTYPE html>
+-bash: !DOCTYPE: event not found
+
+
+
+
+Simons-Air:newschool simonjanashia$ git clone https://github.com/sjanashia/newschool-interactive.git
+Cloning into 'newschool-interactive'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+Simons-Air:newschool simonjanashia$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Simons-Air:newschool simonjanashia$ cd newschool-interactives
+-bash: cd: newschool-interactives: No such file or directory
+Simons-Air:newschool simonjanashia$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Simons-Air:newschool simonjanashia$ cd newschool-interactive
+Simons-Air:newschool-interactive simonjanashia$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Simons-Air:newschool-interactive simonjanashia$ git add .
+Simons-Air:newschool-interactive simonjanashia$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   index.html
+
+Simons-Air:newschool-interactive simonjanashia$ git commit -m "my first commit"
+[master e619857] my first commit
+ 1 file changed, 17 insertions(+)
+ create mode 100644 index.html
+Simons-Air:newschool-interactive simonjanashia$ git push origin master
+Username for 'https://github.com': sjanashia
+Password for 'https://sjanashia@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sjanashia/newschool-interactive.git
+   bb40a8e..e619857  master -> master
+Simons-Air:newschool-interactive simonjanashia$ 
