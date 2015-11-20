@@ -1,0 +1,73 @@
+<html>
+
+
+<head>
+
+
+</head>
+
+
+<body>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+
+
+<script src="Chart.js"></script>
+
+
+
+
+<script>
+var data = [
+    {
+        value: 284229,
+        color:"#ffffcc",
+        highlight: "#FFC870",
+        label: "Black"
+    },
+    {
+        value: 35772,
+        color: "#c7e9b4",
+        highlight: "#FFC870",
+        label: "Black Hispanic"
+    },
+    {
+        value: 129368,
+        color: "#7fcdbb",
+        highlight: "#FFC870",
+        label: "White Hispanic"
+    },
+    {
+        value: 50366,
+        color: "#41b6c4",
+        highlight: "#FFC870",
+        label: "White"
+    },
+    {
+        value: 17058,
+        color: "#2c7fb8",
+        highlight: "#FFC870",
+        label: "Asian/Pacific Islander"
+    },
+    {
+        value: 2257,
+        color: "#253494",
+        highlight: "#FFC870",
+        label: "Am. Indian"
+    }
+]
+
+
+
+
+
+var ctx = document.getElementById("myChart").getContext("2d");
+var myPieChart = new Chart(ctx).Pie(data);
+
+</script>
+
+
+</body>
+
+
+</html>
