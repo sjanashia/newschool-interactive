@@ -1,0 +1,48 @@
+<html>
+
+
+<head>
+
+
+</head>
+
+
+<body>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+
+
+<script src="Chart.js"></script>
+
+
+
+
+<script>
+var data = {
+    labels: ["Black", "Black Hispanic", "White Hispanic", "White", "Asian/Pacific Islander", "Am. Indian"],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: [284229, 35772, 129368, 50366, 17058, 2257]
+        },
+        
+    ]
+};	
+
+
+var ctx = document.getElementById("myChart").getContext("2d");
+var myBarChart = new Chart(ctx).Bar(data, {
+     scaleGridLineWidth : 2,  scaleShowHorizontalLines: false
+});
+
+</script>
+
+
+</body>
+
+
+</html>
